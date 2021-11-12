@@ -1,4 +1,5 @@
 source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+inhibit_all_warnings!
 target 'ZKBaseSwiftProject' do
   use_frameworks!
   pod 'RxSwift'
@@ -9,4 +10,6 @@ target 'ZKBaseSwiftProject' do
   pod 'Moya/RxSwift'    # 用于网络请求
   pod 'Kingfisher'      # SDWebImage swift 版
   pod 'RxDataSources', '~> 3.0'  # RxSwift中用于设置UITableView/UICollectionView data sources
+  pod 'MJRefresh'
+  pod 'MBProgressHUD'
 end
