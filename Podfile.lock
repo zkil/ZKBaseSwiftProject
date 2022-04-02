@@ -1,23 +1,26 @@
 PODS:
-  - Alamofire (4.9.1)
-  - Differentiator (3.1.0)
-  - Kingfisher (7.1.1)
+  - Alamofire (5.5.0)
+  - Differentiator (5.0.0)
+  - Kingfisher (7.2.0)
   - MBProgressHUD (1.2.0)
-  - MJRefresh (3.7.2)
-  - Moya/Core (13.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Moya/RxSwift (13.0.1):
+  - MJRefresh (3.7.5)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
     - Moya/Core
-    - RxSwift (~> 4.0)
-  - Result (4.1.0)
-  - RxCocoa (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxDataSources (3.1.0):
-    - Differentiator (~> 3.0)
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.5.0)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.1)
 
@@ -26,9 +29,10 @@ DEPENDENCIES:
   - Kingfisher
   - MBProgressHUD
   - MJRefresh
+  - Moya (~> 15.0.0)
   - Moya/RxSwift
   - RxCocoa
-  - RxDataSources (~> 3.0)
+  - RxDataSources
   - RxSwift
   - SnapKit
   - SwiftyJSON
@@ -41,27 +45,27 @@ SPEC REPOS:
     - MBProgressHUD
     - MJRefresh
     - Moya
-    - Result
     - RxCocoa
     - RxDataSources
+    - RxRelay
     - RxSwift
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
-  Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
-  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: a0a8f70271610be6a919143973d99b585ba895c3
+PODFILE CHECKSUM: 88cd064464a05710c9678a3862e45d30f78dd564
 
 COCOAPODS: 1.11.2

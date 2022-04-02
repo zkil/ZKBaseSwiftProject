@@ -13,6 +13,10 @@
 		2220AEB6267C7B360096CC8C /* MJRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2220AEB5267C7B360096CC8C /* MJRefresh+Rx.swift */; };
 		225D87B226D4D479004AFAE9 /* ZKNetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D87B126D4D479004AFAE9 /* ZKNetworkApi.swift */; };
 		227337F1267D7B4300A0E844 /* UIButton+icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227337F0267D7B4300A0E844 /* UIButton+icon.swift */; };
+		FD204D94276742690068ECC1 /* ZKBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD204D93276742690068ECC1 /* ZKBaseModel.swift */; };
+		FD204D962767427D0068ECC1 /* ZKBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD204D952767427D0068ECC1 /* ZKBaseViewModel.swift */; };
+		FD204D98276742950068ECC1 /* ZKBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD204D97276742950068ECC1 /* ZKBaseView.swift */; };
+		FD204D9A276742AB0068ECC1 /* ZKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD204D99276742AB0068ECC1 /* ZKBaseViewController.swift */; };
 		FD8BB1D62519D2BA0022CEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1D52519D2BA0022CEDE /* AppDelegate.swift */; };
 		FD8BB1D82519D2BA0022CEDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1D72519D2BA0022CEDE /* SceneDelegate.swift */; };
 		FD8BB1DA2519D2BA0022CEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1D92519D2BA0022CEDE /* ViewController.swift */; };
@@ -21,6 +25,7 @@
 		FD8BB1E22519D2C10022CEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8BB1E02519D2C10022CEDE /* LaunchScreen.storyboard */; };
 		FD8BB1ED2519D2C10022CEDE /* ZKBaseSwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1EC2519D2C10022CEDE /* ZKBaseSwiftProjectTests.swift */; };
 		FD8BB1F82519D2C10022CEDE /* ZKBaseSwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1F72519D2C10022CEDE /* ZKBaseSwiftProjectUITests.swift */; };
+		FDA0DE5D27F822CA00D4B320 /* RequestAlertPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA0DE5C27F822CA00D4B320 /* RequestAlertPlugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,10 @@
 		227337F0267D7B4300A0E844 /* UIButton+icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+icon.swift"; sourceTree = "<group>"; };
 		A3A81FAFAB168B07659925B3 /* Pods_ZKBaseSwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKBaseSwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF282E2770CCCE4CF1ED56AF /* Pods-ZKBaseSwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKBaseSwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-ZKBaseSwiftProject/Pods-ZKBaseSwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
+		FD204D93276742690068ECC1 /* ZKBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKBaseModel.swift; sourceTree = "<group>"; };
+		FD204D952767427D0068ECC1 /* ZKBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKBaseViewModel.swift; sourceTree = "<group>"; };
+		FD204D97276742950068ECC1 /* ZKBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKBaseView.swift; sourceTree = "<group>"; };
+		FD204D99276742AB0068ECC1 /* ZKBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKBaseViewController.swift; sourceTree = "<group>"; };
 		FD8BB1D22519D2BA0022CEDE /* ZKBaseSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKBaseSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8BB1D52519D2BA0022CEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD8BB1D72519D2BA0022CEDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +72,7 @@
 		FD8BB1F32519D2C10022CEDE /* ZKBaseSwiftProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKBaseSwiftProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8BB1F72519D2C10022CEDE /* ZKBaseSwiftProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKBaseSwiftProjectUITests.swift; sourceTree = "<group>"; };
 		FD8BB1F92519D2C10022CEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA0DE5C27F822CA00D4B320 /* RequestAlertPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAlertPlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,10 @@
 		2220AEA3267C42940096CC8C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				FD204D93276742690068ECC1 /* ZKBaseModel.swift */,
+				FD204D952767427D0068ECC1 /* ZKBaseViewModel.swift */,
+				FD204D97276742950068ECC1 /* ZKBaseView.swift */,
+				FD204D99276742AB0068ECC1 /* ZKBaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -130,20 +144,13 @@
 		2220AEA8267C42F30096CC8C /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				FD204D9B27674A6A0068ECC1 /* Untils */,
 				2220AEB4267C7AF90096CC8C /* Extension */,
 				2220AEAC267C431B0096CC8C /* Const */,
 				2220AEAB267C43100096CC8C /* Macros */,
 				2220AEAA267C43060096CC8C /* DataBase */,
-				2220AEA9267C42FD0096CC8C /* Tool */,
 			);
 			path = Expand;
-			sourceTree = "<group>";
-		};
-		2220AEA9267C42FD0096CC8C /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		2220AEAA267C43060096CC8C /* DataBase */ = {
@@ -213,6 +220,7 @@
 		225D87B026D4D41D004AFAE9 /* Moya */ = {
 			isa = PBXGroup;
 			children = (
+				FDA0DE5B27F8228600D4B320 /* PluginType */,
 				225D87B126D4D479004AFAE9 /* ZKNetworkApi.swift */,
 			);
 			path = Moya;
@@ -241,6 +249,13 @@
 				16565FE5628A4C75E42DDD8D /* Pods-ZKBaseSwiftProject.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD204D9B27674A6A0068ECC1 /* Untils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Untils;
 			sourceTree = "<group>";
 		};
 		FD8BB1C92519D2B90022CEDE = {
@@ -301,6 +316,14 @@
 				FD8BB1F92519D2C10022CEDE /* Info.plist */,
 			);
 			path = ZKBaseSwiftProjectUITests;
+			sourceTree = "<group>";
+		};
+		FDA0DE5B27F8228600D4B320 /* PluginType */ = {
+			isa = PBXGroup;
+			children = (
+				FDA0DE5C27F822CA00D4B320 /* RequestAlertPlugin.swift */,
+			);
+			path = PluginType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,14 +502,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA0DE5D27F822CA00D4B320 /* RequestAlertPlugin.swift in Sources */,
 				2220AEB1267C45170096CC8C /* ZKConst.swift in Sources */,
 				FD8BB1DA2519D2BA0022CEDE /* ViewController.swift in Sources */,
 				2220AEB3267C477C0096CC8C /* ZKMacros.swift in Sources */,
+				FD204D98276742950068ECC1 /* ZKBaseView.swift in Sources */,
 				FD8BB1D62519D2BA0022CEDE /* AppDelegate.swift in Sources */,
 				227337F1267D7B4300A0E844 /* UIButton+icon.swift in Sources */,
 				2220AEB6267C7B360096CC8C /* MJRefresh+Rx.swift in Sources */,
+				FD204D962767427D0068ECC1 /* ZKBaseViewModel.swift in Sources */,
+				FD204D9A276742AB0068ECC1 /* ZKBaseViewController.swift in Sources */,
 				225D87B226D4D479004AFAE9 /* ZKNetworkApi.swift in Sources */,
 				FD8BB1D82519D2BA0022CEDE /* SceneDelegate.swift in Sources */,
+				FD204D94276742690068ECC1 /* ZKBaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

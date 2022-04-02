@@ -11,25 +11,38 @@ import Moya
 import Alamofire
 
 let baseURLString = "";
-let ZKProvider = MoyaProvider<ZKNetWorkApi>()
+let ZKProvider = MoyaProvider<ZKNetWorkApi>(plugins: [NetworkLoggerPlugin(configuration: .init(formatter: .init(responseData: JSONResponseDataFormatter), logOptions: .verbose)), RequestAlertPlugin()])
+
+var serverHeaders: [String : String] {
+/*
+    let token = ZKLoginUser.shared.model?.token ?? ""
+   //print([ "lang": "zh-cn", "pl": "ios", "Authorization": token ])
+    var lang = "th"
+    if WLLanguageManager.shared.currentLanguage == "zh-Hans" {
+        lang = "zh-cn"
+    }
+    
+    
+    return [ "lang": lang, "pl": "ios", "Authorization": token ]
+*/
+    return [:]
+}
 
 enum ZKNetWorkApi {
-    case request(baseUrl: String = baseURLString, path: String, method: Moya.Method, params: [String: Any] = [:])
-    case post(baseUrl: String = baseURLString, path: String, params: [String: Any] = [:])
-    case get(baseUrl: String = baseURLString, path: String, params: [String: Any] = [:])
+    case info
 }
 
 extension ZKNetWorkApi: TargetType {
     var baseURL: URL {
-        URL(string: self.info.0)!
+        URL(string: baseURLString)!
     }
     
     var path: String {
-        self.info.1
+        return ""
     }
     
     var method: Moya.Method {
-        self.info.2
+        return .get
     }
     
     //单元测试
@@ -38,27 +51,25 @@ extension ZKNetWorkApi: TargetType {
     }
     
     var task: Task {
-        .requestParameters(parameters: self.info.3, encoding: Alamofire.URLEncoding.default)
+        .requestParameters(parameters: [:], encoding: Alamofire.URLEncoding.default)
     }
     
     var headers: [String : String]? {
-        nil
+        serverHeaders
     }
     
 }
 
-
-extension ZKNetWorkApi {
-    var info: (String, String, Moya.Method, [String: Any]) {
-        switch self {
-        case .request(let baseUrl, let path, let method, let params):
-            return (baseUrl, path, method, params)
-        case .post(let baseUrl, let path, let params):
-            return (baseUrl, path, .post, params)
-        case .get(let baseUrl, let path, let params):
-            return (baseUrl, path, .get, params)
-//        default:
-//            return ("", "", .get, [:])
-        }
+// MARK: - log
+private func JSONResponseDataFormatter(_ data: Data) -> String {
+    do {
+        
+        
+        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
+        let prettyData = try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
+        return String(data: prettyData, encoding: .utf8) ?? String(data: data, encoding: .utf8) ?? ""
+        
+    } catch {
+        return String(data: data, encoding: .utf8) ?? ""
     }
 }
