@@ -20,11 +20,11 @@
 		FD7CCCB1280017F4002BCBD3 /* UIViewController+MBPHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCAF280017F4002BCBD3 /* UIViewController+MBPHUD.m */; };
 		FD7CCCB2280017F4002BCBD3 /* UIView+MBPHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCB0280017F4002BCBD3 /* UIView+MBPHUD.m */; };
 		FD7CCCBC280019D2002BCBD3 /* JYEqualCellSpaceFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCBB280019D2002BCBD3 /* JYEqualCellSpaceFlowLayout.swift */; };
-		FD7CCCC328001A0B002BCBD3 /* ZKBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCBE28001A0B002BCBD3 /* ZKBaseNavigationController.swift */; };
-		FD7CCCC428001A0B002BCBD3 /* ZKBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCBF28001A0B002BCBD3 /* ZKBaseView.swift */; };
-		FD7CCCC528001A0B002BCBD3 /* ZKBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCC028001A0B002BCBD3 /* ZKBaseViewModel.swift */; };
-		FD7CCCC628001A0B002BCBD3 /* ZKBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCC128001A0B002BCBD3 /* ZKBaseModel.swift */; };
-		FD7CCCC728001A0B002BCBD3 /* ZKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCC228001A0B002BCBD3 /* ZKBaseViewController.swift */; };
+		FD7CCCC328001A0B002BCBD3 /* ZKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCBE28001A0B002BCBD3 /* ZKNavigationController.swift */; };
+		FD7CCCC428001A0B002BCBD3 /* ZKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCBF28001A0B002BCBD3 /* ZKView.swift */; };
+		FD7CCCC528001A0B002BCBD3 /* ZKViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCC028001A0B002BCBD3 /* ZKViewModel.swift */; };
+		FD7CCCC628001A0B002BCBD3 /* ZKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCC128001A0B002BCBD3 /* ZKModel.swift */; };
+		FD7CCCC728001A0B002BCBD3 /* ZKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7CCCC228001A0B002BCBD3 /* ZKViewController.swift */; };
 		FD8BB1D62519D2BA0022CEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1D52519D2BA0022CEDE /* AppDelegate.swift */; };
 		FD8BB1D82519D2BA0022CEDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1D72519D2BA0022CEDE /* SceneDelegate.swift */; };
 		FD8BB1DA2519D2BA0022CEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1D92519D2BA0022CEDE /* ViewController.swift */; };
@@ -33,6 +33,8 @@
 		FD8BB1E22519D2C10022CEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8BB1E02519D2C10022CEDE /* LaunchScreen.storyboard */; };
 		FD8BB1ED2519D2C10022CEDE /* ZKBaseSwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1EC2519D2C10022CEDE /* ZKBaseSwiftProjectTests.swift */; };
 		FD8BB1F82519D2C10022CEDE /* ZKBaseSwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8BB1F72519D2C10022CEDE /* ZKBaseSwiftProjectUITests.swift */; };
+		FD9E64A6281151E500C6337D /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E64A5281151E500C6337D /* Navigator.swift */; };
+		FD9E64A82811534900C6337D /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E64A72811534900C6337D /* ErrorTracker.swift */; };
 		FDA0DE5D27F822CA00D4B320 /* RequestAlertPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA0DE5C27F822CA00D4B320 /* RequestAlertPlugin.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,11 +73,11 @@
 		FD7CCCAF280017F4002BCBD3 /* UIViewController+MBPHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MBPHUD.m"; sourceTree = "<group>"; };
 		FD7CCCB0280017F4002BCBD3 /* UIView+MBPHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MBPHUD.m"; sourceTree = "<group>"; };
 		FD7CCCBB280019D2002BCBD3 /* JYEqualCellSpaceFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYEqualCellSpaceFlowLayout.swift; sourceTree = "<group>"; };
-		FD7CCCBE28001A0B002BCBD3 /* ZKBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKBaseNavigationController.swift; sourceTree = "<group>"; };
-		FD7CCCBF28001A0B002BCBD3 /* ZKBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKBaseView.swift; sourceTree = "<group>"; };
-		FD7CCCC028001A0B002BCBD3 /* ZKBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKBaseViewModel.swift; sourceTree = "<group>"; };
-		FD7CCCC128001A0B002BCBD3 /* ZKBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKBaseModel.swift; sourceTree = "<group>"; };
-		FD7CCCC228001A0B002BCBD3 /* ZKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKBaseViewController.swift; sourceTree = "<group>"; };
+		FD7CCCBE28001A0B002BCBD3 /* ZKNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKNavigationController.swift; sourceTree = "<group>"; };
+		FD7CCCBF28001A0B002BCBD3 /* ZKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKView.swift; sourceTree = "<group>"; };
+		FD7CCCC028001A0B002BCBD3 /* ZKViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKViewModel.swift; sourceTree = "<group>"; };
+		FD7CCCC128001A0B002BCBD3 /* ZKModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKModel.swift; sourceTree = "<group>"; };
+		FD7CCCC228001A0B002BCBD3 /* ZKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZKViewController.swift; sourceTree = "<group>"; };
 		FD7CCCC928001D1A002BCBD3 /* NEW-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NEW-Bridging-Header.h"; sourceTree = "<group>"; };
 		FD8BB1D22519D2BA0022CEDE /* ZKBaseSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKBaseSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8BB1D52519D2BA0022CEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,8 @@
 		FD8BB1F32519D2C10022CEDE /* ZKBaseSwiftProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKBaseSwiftProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8BB1F72519D2C10022CEDE /* ZKBaseSwiftProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKBaseSwiftProjectUITests.swift; sourceTree = "<group>"; };
 		FD8BB1F92519D2C10022CEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9E64A5281151E500C6337D /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		FD9E64A72811534900C6337D /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
 		FDA0DE5C27F822CA00D4B320 /* RequestAlertPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAlertPlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +211,7 @@
 			children = (
 				FD7CCCA8280017C4002BCBD3 /* ActivityToken.swift */,
 				FD7CCCA9280017C4002BCBD3 /* RxActivityIndicator.swift */,
+				FD9E64A72811534900C6337D /* ErrorTracker.swift */,
 			);
 			path = RxActivity;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 		FD7CCCB928001901002BCBD3 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				FD9E64A4281151BD00C6337D /* navigator */,
 				2220AEA7267C42E10096CC8C /* http */,
 				FD7CCCAC280017F4002BCBD3 /* MBProgressHUD */,
 				FD7CCCA7280017C4002BCBD3 /* RxActivity */,
@@ -278,11 +284,11 @@
 		FD7CCCBD280019D7002BCBD3 /* base */ = {
 			isa = PBXGroup;
 			children = (
-				FD7CCCC128001A0B002BCBD3 /* ZKBaseModel.swift */,
-				FD7CCCBE28001A0B002BCBD3 /* ZKBaseNavigationController.swift */,
-				FD7CCCBF28001A0B002BCBD3 /* ZKBaseView.swift */,
-				FD7CCCC228001A0B002BCBD3 /* ZKBaseViewController.swift */,
-				FD7CCCC028001A0B002BCBD3 /* ZKBaseViewModel.swift */,
+				FD7CCCC128001A0B002BCBD3 /* ZKModel.swift */,
+				FD7CCCBE28001A0B002BCBD3 /* ZKNavigationController.swift */,
+				FD7CCCBF28001A0B002BCBD3 /* ZKView.swift */,
+				FD7CCCC228001A0B002BCBD3 /* ZKViewController.swift */,
+				FD7CCCC028001A0B002BCBD3 /* ZKViewModel.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -354,6 +360,14 @@
 				FD8BB1F92519D2C10022CEDE /* Info.plist */,
 			);
 			path = ZKBaseSwiftProjectUITests;
+			sourceTree = "<group>";
+		};
+		FD9E64A4281151BD00C6337D /* navigator */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E64A5281151E500C6337D /* Navigator.swift */,
+			);
+			path = navigator;
 			sourceTree = "<group>";
 		};
 		FDA0DE5B27F8228600D4B320 /* PluginType */ = {
@@ -542,19 +556,21 @@
 			files = (
 				FD7CCCBC280019D2002BCBD3 /* JYEqualCellSpaceFlowLayout.swift in Sources */,
 				FDA0DE5D27F822CA00D4B320 /* RequestAlertPlugin.swift in Sources */,
-				FD7CCCC428001A0B002BCBD3 /* ZKBaseView.swift in Sources */,
+				FD7CCCC428001A0B002BCBD3 /* ZKView.swift in Sources */,
 				2220AEB1267C45170096CC8C /* ZKConst.swift in Sources */,
 				FD7CCCA3280013F4002BCBD3 /* UIViewController+ext.swift in Sources */,
+				FD9E64A6281151E500C6337D /* Navigator.swift in Sources */,
 				FD8BB1DA2519D2BA0022CEDE /* ViewController.swift in Sources */,
-				FD7CCCC528001A0B002BCBD3 /* ZKBaseViewModel.swift in Sources */,
+				FD7CCCC528001A0B002BCBD3 /* ZKViewModel.swift in Sources */,
 				2220AEB3267C477C0096CC8C /* ZKMacros.swift in Sources */,
 				FD7CCCB2280017F4002BCBD3 /* UIView+MBPHUD.m in Sources */,
 				FD8BB1D62519D2BA0022CEDE /* AppDelegate.swift in Sources */,
 				227337F1267D7B4300A0E844 /* UIButton+icon.swift in Sources */,
-				FD7CCCC728001A0B002BCBD3 /* ZKBaseViewController.swift in Sources */,
-				FD7CCCC328001A0B002BCBD3 /* ZKBaseNavigationController.swift in Sources */,
+				FD9E64A82811534900C6337D /* ErrorTracker.swift in Sources */,
+				FD7CCCC728001A0B002BCBD3 /* ZKViewController.swift in Sources */,
+				FD7CCCC328001A0B002BCBD3 /* ZKNavigationController.swift in Sources */,
 				2220AEB6267C7B360096CC8C /* MJRefresh+Rx.swift in Sources */,
-				FD7CCCC628001A0B002BCBD3 /* ZKBaseModel.swift in Sources */,
+				FD7CCCC628001A0B002BCBD3 /* ZKModel.swift in Sources */,
 				FD7CCCA628001467002BCBD3 /* UIViewController+Rx.swift in Sources */,
 				FD7CCCB1280017F4002BCBD3 /* UIViewController+MBPHUD.m in Sources */,
 				FD7CCCAA280017C4002BCBD3 /* ActivityToken.swift in Sources */,

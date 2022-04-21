@@ -7,8 +7,7 @@
 
 import UIKit
 import RxSwift
-class ZKBaseNavigationController: UINavigationController {
-    lazy var disposeBag = DisposeBag()
+class ZKNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 

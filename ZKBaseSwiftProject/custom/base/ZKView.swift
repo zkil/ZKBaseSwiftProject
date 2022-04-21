@@ -8,13 +8,13 @@
 
 import UIKit
 import RxSwift
-protocol ZKBaseViewProtocol {
+protocol ZKViewType {
     func initSubView()
     func layoutSubView()
     func bindViewModel()
 }
 
-class ZKBaseView: UIView, ZKBaseViewProtocol {
+class ZKView: UIView, ZKViewType {
     func initSubView() {
         
     }
@@ -26,8 +26,7 @@ class ZKBaseView: UIView, ZKBaseViewProtocol {
     func bindViewModel() {
         
     }
-    
-    lazy var disposeBag = DisposeBag()
+ 
     
     override init(frame: CGRect) {
         super.init(frame: frame)

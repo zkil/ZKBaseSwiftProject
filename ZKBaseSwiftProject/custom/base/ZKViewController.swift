@@ -11,37 +11,42 @@ import RxSwift
 import RxCocoa
 import RxRelay
 import MBProgressHUD
-protocol ZKBaseViewControllerProtocol {
+protocol ZKViewControllerType {
     func initSubView()
     func layoutSubView()
     func bindViewModel()
 }
 
-class ZKBaseViewController: UIViewController, ZKBaseViewControllerProtocol {
+class ZKBaseViewController: UIViewController, ZKViewControllerType, Navigatable {
     
-    
-    lazy var disposeBag = DisposeBag()
-    
+    var viewModel: ZKViewModel!
+    var navigator: Navigator!
+
+    init(viewModel: ZKViewModel? = nil, navigator: Navigator) {
+        self.viewModel = viewModel
+        self.navigator = navigator
+        super.init(nibName: nil, bundle: nil)
+    }
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-        self.rx.methodInvoked(#selector(UIViewController.viewDidLoad)).bind {  [unowned self] _ in
+        rx.methodInvoked(#selector(UIViewController.viewDidLoad)).bind {  [unowned self] _ in
             self.initSubView()
             self.layoutSubView()
             self.bindViewModel()
-        }.disposed(by: disposeBag)
+        }.disposed(by: rx.disposeBag)
         
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
-        self.rx.methodInvoked(#selector(UIViewController.viewDidLoad)).bind {  [unowned self] _ in
+        rx.methodInvoked(#selector(UIViewController.viewDidLoad)).bind {  [unowned self] _ in
             self.initSubView()
             self.layoutSubView()
             self.bindViewModel()
-        }.disposed(by: disposeBag)
+        }.disposed(by: rx.disposeBag)
     }
     
     override func viewDidLoad() {
@@ -66,15 +71,6 @@ class ZKBaseViewController: UIViewController, ZKBaseViewControllerProtocol {
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent

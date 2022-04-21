@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.5.0)
   - Differentiator (5.0.0)
+  - Hero (1.6.1)
   - Kingfisher (7.2.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.5)
@@ -11,6 +12,8 @@ PODS:
   - Moya/RxSwift (15.0.0):
     - Moya/Core
     - RxSwift (~> 6.0)
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -18,22 +21,41 @@ PODS:
     - Differentiator (~> 5.0)
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
+  - RxSwiftExt (6.0.1):
+    - RxSwiftExt/Core (= 6.0.1)
+    - RxSwiftExt/RxCocoa (= 6.0.1)
+  - RxSwiftExt/Core (6.0.1):
+    - RxSwift (~> 6.0)
+  - RxSwiftExt/RxCocoa (6.0.1):
+    - RxCocoa (~> 6.0)
+    - RxSwiftExt/Core
+  - RxViewController (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - Hero
   - Kingfisher
   - MBProgressHUD
   - MJRefresh
   - Moya (~> 15.0.0)
   - Moya/RxSwift
+  - "NSObject+Rx"
   - RxCocoa
   - RxDataSources
+  - RxGesture
   - RxSwift
+  - RxSwiftExt
+  - RxViewController
   - SnapKit
   - SwiftyJSON
 
@@ -41,31 +63,41 @@ SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
     - Differentiator
+    - Hero
     - Kingfisher
     - MBProgressHUD
     - MJRefresh
     - Moya
+    - "NSObject+Rx"
     - RxCocoa
     - RxDataSources
+    - RxGesture
     - RxRelay
     - RxSwift
+    - RxSwiftExt
+    - RxViewController
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
+  RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 88cd064464a05710c9678a3862e45d30f78dd564
+PODFILE CHECKSUM: db2dab0c7c3080ae8839ab3dd9201c9d1ea6718a
 
 COCOAPODS: 1.11.2

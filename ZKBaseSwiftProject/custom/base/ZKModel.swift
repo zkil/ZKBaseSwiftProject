@@ -8,10 +8,7 @@
 
 import UIKit
 import RxSwift
-protocol ZKBaseModelProtocol {
-    
-}
 
-class ZKBaseModel: NSObject, ZKBaseModelProtocol {
-    lazy var disposeBag = DisposeBag()
+class ZKModel: NSObject {
+    
 }
